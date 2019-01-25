@@ -12,8 +12,8 @@ from torch.autograd import Variable
 # Importing the dataset and prepare the training set and the test set
 #data set contains movies, users and ratings, ratings range from 1 star to 5 star
 
-training_set = pd.read_csv('ml-100k/u1.base', delimiter = '\t')
-test_set = pd.read_csv('ml-100k/u1.test', delimiter = '\t')
+training_set = pd.read_csv('u1.base', delimiter = '\t')
+test_set = pd.read_csv('u1.test', delimiter = '\t')
 ##convert the dataframe into array
 training_set = np.array(training_set, dtype = 'int')
 test_set = np.array(test_set, dtype = 'int')
